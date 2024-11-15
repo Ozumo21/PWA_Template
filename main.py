@@ -7,8 +7,6 @@ app = Flask(__name__)
 
 @app.route('/index.html', methods=['GET'])
 @app.route('/', methods=['POST', 'GET'])
-def index():
-  return render_template('/index.html')
 
 def index():
    data = dbHandler.listExtension()
